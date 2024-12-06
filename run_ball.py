@@ -1,6 +1,10 @@
 import turtle
 import ball
+from seven_segments_proc import num
 import random
+
+
+
 
 num_balls = 5
 turtle.speed(0)
@@ -46,6 +50,8 @@ while (True):
         ball.move_ball(i, xpos, ypos, vx, vy, dt)
         ball.update_ball_velocity(i, xpos, ypos, vx, vy, canvas_width, canvas_height, ball_radius)
     turtle.update()
+
+
 
 # hold the window; close it by clicking the window close 'x' mark
 turtle.done()
